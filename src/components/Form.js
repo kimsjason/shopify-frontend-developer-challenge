@@ -1,8 +1,12 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const StyledForm = styled.div``;
 
 const Form = () => {
+  const [query, setQuery] = useState("");
+  const [result, setResult] = useState();
+
   return (
     <StyledForm className="tagline-mission-statement-form">
       <h1 className="section-header">
