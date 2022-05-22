@@ -7,6 +7,11 @@ const Form = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState();
 
+  let prompts = [
+    `Generate a tagline for a ${query} business`,
+    `Generate a mission statement for a ${query} business`,
+  ];
+
   return (
     <StyledForm className="tagline-mission-statement-form">
       <h1 className="section-header">
