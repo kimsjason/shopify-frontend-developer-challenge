@@ -13,7 +13,13 @@ const Form = () => {
         Describe your business in one word and let us do the rest.
       </h1>
       <form>
-        <input type="text" placeholder="Enter query" />
+        <input
+          type="text"
+          name="query"
+          placeholder="Enter query"
+          className="query-input"
+          onChange={(e) => e.target.value}
+        />
         <button type="submit" className="submit-button">
           Generate Content
         </button>
