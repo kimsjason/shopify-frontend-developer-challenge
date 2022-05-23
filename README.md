@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Shopify Front End Developer Intern Challenge Fall 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been completed for Shopify's front end internship challenge. My goal was understand how the OpenAI API could be leveraged to drive additional value for Shopify's end users. I ultimately created a single purpose application that generated taglines and mission statements based on a user's input query / description of their business.
 
-## Available Scripts
+- [Challenge Prompt](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)
+- [App Demo](https://shopify-gpt-3-challenge.herokuapp.com/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+The user is able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Enter a query (business description) that calls the Open API and returns their original print, a tagline, and a mission statement upon submitting the form
+- View all searched results, sorted from newest to oldest
+- Save their prompts and responses with local storage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## DESIGN
 
-### `npm test`
+- I created some basic designs with Figma to mock up mobile and desktop views of the app
+- [Figma File](https://www.figma.com/file/krkvYILQssebm56Fwre4mk/Shopify-Front-End-Developer-Intern-Challenge-2022?node-id=0%3A1)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## BUILD
 
-### `npm run build`
+- ReactJS
+- Styled Components
+- Local Storage
+- [OpenAI API](https://openai.com/)
+- Heroku
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## FUTURE CONSIDERATIONS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Migrate API calls to backend server to protect API key
+- Build out a tool that generates comprehensive user-facing business text (e.g., About Us page, product details, etc.)
