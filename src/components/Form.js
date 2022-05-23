@@ -48,9 +48,8 @@ const StyledForm = styled.div`
   }
 `;
 
-const Form = () => {
+const Form = ({ setCompletions }) => {
   const [query, setQuery] = useState("");
-  const [completions, setCompletions] = useState([]);
 
   let prompts = [
     `Generate a tagline for a ${query} business`,
