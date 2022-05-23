@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 
-const StyledForm = styled.div``;
+const StyledForm = styled.div`
+ 
+  }
+`;
 
 const Form = () => {
   const [query, setQuery] = useState("");
@@ -39,7 +42,7 @@ const Form = () => {
     return data.choices[0].text;
   };
 
-  async function onSubmit(event) {
+  const onSubmit = async (event) => {
     event.preventDefault();
 
     const completion = {
@@ -50,7 +53,7 @@ const Form = () => {
 
     setQuery("");
     setResult(completion);
-  }
+  };
 
   return (
     <StyledForm className="tagline-mission-statement-form">
