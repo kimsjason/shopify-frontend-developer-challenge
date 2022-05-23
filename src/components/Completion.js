@@ -16,6 +16,15 @@ const StyledCompletion = styled.div`
   .content {
     font-weight: normal;
   }
+
+  @media only screen and (min-width: 769px) {
+    .query,
+    .tagline,
+    .mission-statement {
+      display: grid;
+      grid-template-columns: 250px auto;
+    }
+  }
 `;
 
 const Completion = ({ completion }) => {
