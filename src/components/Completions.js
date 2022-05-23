@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Completion from "./Completion";
 
-const StyledCompletions = styled.div``;
+const StyledCompletions = styled.div`
+  padding: 64px 5%;
+`;
 
 const Completions = ({ completions }) => {
   return (
