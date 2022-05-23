@@ -1,13 +1,38 @@
 import styled from "styled-components";
 
-const StyledCompletion = styled.div``;
+const StyledCompletion = styled.div`
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #cccccc;
+
+  .query,
+  .tagline,
+  .mission-statement {
+    font-weight: bold;
+    padding: 5px 0;
+  }
+
+  .content {
+    font-weight: normal;
+  }
+`;
 
 const Completion = ({ completion }) => {
   return (
     <StyledCompletion className="completion">
-      <p className="query">{completion.query}</p>
-      <p className="tagline">{completion.tagline}</p>
-      <p className="mission-statement">{completion.mission_statement}</p>
+      <div className="query">
+        Query
+        <p className="content">{completion.query}</p>
+      </div>
+      <div className="tagline">
+        Tagline
+        <p className="content">{completion.tagline}</p>
+      </div>
+      <div className="mission-statement">
+        Mission Statement
+        <p className="content">{completion.mission_statement}</p>
+      </div>
     </StyledCompletion>
   );
 };
