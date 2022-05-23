@@ -15,7 +15,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("completions", JSON.stringify(completions));
-    console.log("adding to local storage...");
   }, [completions]);
 
   return (
