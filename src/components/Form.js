@@ -91,6 +91,7 @@ const Form = () => {
       query: query,
       tagline: await fetchAPI(prompts[0]),
       mission_statement: await fetchAPI(prompts[1]),
+      timestamp: new Date(Date.now()),
     };
 
     setQuery("");
