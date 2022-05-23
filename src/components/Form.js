@@ -50,7 +50,7 @@ const StyledForm = styled.div`
 
 const Form = () => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState();
+  const [completions, setCompletions] = useState([]);
 
   let prompts = [
     `Generate a tagline for a ${query} business`,
@@ -95,7 +95,9 @@ const Form = () => {
     };
 
     setQuery("");
-    setResult(completion);
+    setCompletions((prevState) => {
+      return [...prevState, completion];
+    });
   };
 
   return (
