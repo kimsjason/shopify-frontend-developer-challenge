@@ -2,7 +2,49 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const StyledForm = styled.div`
- 
+  padding: 0 5%;
+
+  .section-header {
+    padding: 64px 0;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  form > * {
+    height: 51px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgb(107, 113, 119) 0px 0px 0px 1px;
+    font-size: 1.6rem;
+  }
+
+  input {
+    padding: 16px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .section-header {
+      padding-bottom: 48px;
+    }
+
+    form {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    input {
+      width: 250px;
+    }
+
+    .submit-button {
+      width: 180px;
+    }
   }
 `;
 
